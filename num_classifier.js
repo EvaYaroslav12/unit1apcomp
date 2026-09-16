@@ -9,20 +9,21 @@
 function num_classifier (num) {
     let check = num/2
     if (num == 0) {
-        console.log ("zero");
+        return ("zero");
     }
     if (Number.isInteger(check) && num>0) {
-        console.log ('positive even');
+        return ('positive even');
     }
     if (Number.isInteger(check) && num < 0) {
-        console.log('negative even');
+        return ('negative even');
     }
     if (!Number.isInteger(check) && num > 0) {
-        console.log('positive odd');
+        return ('positive odd');
     }
     if (!Number.isInteger(check) && num < 0) {
-        console.log('negative odd');
+        return ('negative odd');
     }
 }
-num_classifier(0)
+result = num_classifier(12)
+console.log (result)
 
