@@ -8,8 +8,9 @@
 
 function countdown(n){
     let counter = n
-    for (let i = 1; i <= n; i++){
-        counter = counter -i
+    console.log (counter)
+    for (let i = 2; i <= n; i++){
+        counter -=1
         console.log (counter)
     }
 }
