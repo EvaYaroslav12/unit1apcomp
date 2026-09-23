@@ -8,10 +8,15 @@
 // // "1 2 3\n2 4 6\n3 6 9"
 
 function multiplicationTable(n){
+    let listy = []
     for (let i = 1; i <= n; i++){
         for (let o = 1; o <= n; o++){
-            
-            listy.push()
+            nom = i*o
+            listy.push(nom)
         }
+        // listy +="\n"
     }
+    console.log (listy)
 }
+
+multiplicationTable(3)
