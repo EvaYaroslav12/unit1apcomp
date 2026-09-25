@@ -19,10 +19,33 @@
 // Ex. Frame 1 is 30 points because (10 + frame 2 + frame 3)
 
 function lizardcalc (rayray){
-    const attempts = rayray.flat().length;
+    const attempts= listy.filter(item => Array.isArray(item)).length-1;
+    let count = 0
     for (let i = 0; i <= attempts; i++){
-        console.log(i)
+        // let checky =(rayray[i].length);
+        //check if its a strike
+        if (rayray[i][0]==10){
+            //check if the next roll is a strike
+            if (rayray[i+1][0]!=10){ // next isnt a strike
+                count = count+10+rayray[i+1][0]+rayray[i][1]
+            }
+            if (rayray[i+1][0]==10){ // next is a strike
+                count = count+10+rayray[i+1][0]+rayray[i+2][0]
+            }
+        }
+        //check if its a spare
+        if (rayray[i][0]+rayray[i][1]==10);{
+            count = count+10+rayray[i+1][0]
+            console.log(count)
+        }
+        // count if neither
+        if (rayray[i][0]+rayray[i][1]!=10);{
+            count = count+rayray[i][0]+rayray[i][1]
+        }
+        // else console.log(rayray[i])
+        // console.log(rayray[i]) 7
+        console.log (count)
     }
 }
-listy = [[1,9], [4,3], [10],[2,3], [10], [10], [5,4], [9,1], [7,2], [2,4], [6,4],[3,7 ]]
+listy = [[1,9], [4,3], [10],[2,3], [10], [10], [5,4], [9,1], [7,2], [2,4], [6,3],[3,6]]
 lizardcalc(listy)
