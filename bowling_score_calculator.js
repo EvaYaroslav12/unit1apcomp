@@ -26,15 +26,15 @@ function lizardcalc (rayray){
         //let checky =(rayray[i].length);
         //check if its a strike
         if (rayray[i][0] == 10){
-            console.log('Strike!')
+            //console.log('Strike!')
             //check if the next roll is a strike
             
                 if (rayray[i+1][0]!=10){ // next isnt a strike
-                    console.log('Next roll is not a strike')
+                    //console.log('Next roll is not a strike')
                     count = count+10+rayray[i+1][0]+rayray[i+1][1]
                 }
                 if (rayray[i+1][0]==10){ // next is a strike
-                    console.log('Next roll is a strike')
+                    //console.log('Next roll is a strike')
                     count = count+10+rayray[i+1][0]+rayray[i+2][0]
                 }
             
@@ -42,11 +42,11 @@ function lizardcalc (rayray){
         else {
             //check if its a spare
             if (rayray[i][0]+rayray[i][1]==10){
-                console.log('Spare!')
+                //console.log('Spare!')
                 count = count+10+rayray[i+1][0]
             }
             else {
-                console.log('Open frame')
+                //console.log('Open frame')
                 //count if neither
                 count = count+rayray[i][0]+rayray[i][1]
             }
