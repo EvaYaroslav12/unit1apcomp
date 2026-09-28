@@ -19,4 +19,4 @@ function multiplicationTable(n){
     console.log (listy)
 }
 
-multiplicationTable(9)
+multiplicationTable(5)
