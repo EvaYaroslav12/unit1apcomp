@@ -16,4 +16,3 @@ function Food_lines(N,M,a){
 }
 
 Food_lines(5,3, [2,2,3,3,3])
-.
