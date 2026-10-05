@@ -1,15 +1,16 @@
 function Food_lines(N,M,a){
     
     for (let i=1; i<=M; i++){ 
-        //console.log(i)
-        for(let b=1; b<=N; b++){ 
+        console.log("i=", i)
+        for(let b=0; b<N; b++){ 
             //console.log("b",b)
-            if (Math.min(...a) == a[i]){ 
+            if (Math.min(...a) == a[b]){ 
                 //console.log("math", Math.min(...a))
-                console.log(a)
-                console.log("result:",a[i])
-                a[i]+=1
+                //console.log(a)
+                console.log("result:",a[b])
+                a[b]+=1
                 // console.log(a[i])
+                break;
             }
         }
     }
