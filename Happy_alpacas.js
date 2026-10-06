@@ -23,30 +23,33 @@ function happyAlpacas(N, X) {
             happychecky +=1
         }
     }
-//         console.log(happychecky)
-//     if (happychecky < X) {
-//         console.log("too small adding stuff now")
-//         console.log("numlisty", numlisty)
-//         for (let a = 0; a < N; a++) {
-//         //console.log("added", numlisty[a] + numlisty[a+1])
-//         if ((N-1)==a) {
-//             //console.log("nan added", numlisty[a] + numlisty[0])
-//             if ((numlisty[a]+numlisty[0]) % 2 != 0) {
-//             numlisty[a] +=1
-//             }
-//         }
-//         else{
-//             if ((numlisty[a]+numlisty[a+1]) % 2 != 0) {
-//             numlisty[a] +=1
-//         }
-//         if (happychecky == X) {
-//             return happychecky
-//         }
-//     }
-//     }
-//     }
+    console.log(happychecky)
+            }
+            
+    console.log(happychecky)
+    if (happychecky < X) {
+        console.log("too small adding stuff now")
+        console.log("numlisty", numlisty)
+        for (let a = 0; a < N; a++) {
+        //console.log("added", numlisty[a] + numlisty[a+1])
+        if ((N-1)==a) {
+            //console.log("nan added", numlisty[a] + numlisty[0])
+            if ((numlisty[a]+numlisty[0]) % 2 != 0) {
+            numlisty[a] +=1
+            }
+        }
+        else{
+            if ((numlisty[a]+numlisty[a+1]) % 2 != 0) {
+            numlisty[a] +=1
+        }
+        if (happychecky == X) {
+            return happychecky
+        }
+    }
+    }
+    }
 
-}
+
 }
 
 
