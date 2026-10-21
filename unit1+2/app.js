@@ -61,16 +61,18 @@
 // TODO 9: Predict what this code will print BEFORE running it.
 //         Write your prediction as a comment, THEN run it.
 
-let message = "I am global";
+// let message = "I am global";
 
-function scopeTest() {
-  let message = "I am local";
-  console.log("Inside function:", message);
-}
+// function scopeTest() {
+//   let message = "I am local";
+//   console.log("Inside function:", message);
+// }
 
-scopeTest();
-console.log("Outside function:", message);
+// scopeTest();
+// console.log("Outside function:", message);
 
 // MY PREDICTION:
 //   Inside function:
 //   Outside function:
+
+console.log("\"hi\"")
